@@ -1,5 +1,6 @@
 ========================================================================
 PANDUAN PENGGUNAAN APLIKASI RENAME PDF MASSAL
+Created by: rezaldwntr
 ========================================================================
 
 DESKRIPSI:
@@ -9,73 +10,53 @@ Aplikasi ini AMAN karena tidak menimpa file asli, melainkan menyalin
 file yang sudah di-rename ke folder baru.
 
 ------------------------------------------------------------------------
-A. CARA MEMBUAT APLIKASI (Hanya dilakukan sekali di awal)
+A. CARA MEMBUAT APLIKASI (Hanya jika belum ada file .EXE)
 ------------------------------------------------------------------------
-Jika Anda belum memiliki file ".exe" dan masih berupa script mentah, 
-lakukan langkah ini:
-
-1. Pastikan komputer terhubung ke Internet (untuk download library awal).
-2. Pastikan file "PDF_Renamer_GUI.py" dan "Buat_Exe.bat" ada di 
-   dalam satu folder yang sama.
-3. Klik dua kali file "Buat_Exe.bat".
-4. Tunggu proses berjalan (layar hitam) hingga muncul tulisan "SELESAI".
-5. Akan muncul file baru bernama "Aplikasi_Rename_PDF.exe".
-   File inilah yang bisa Anda pakai seterusnya atau dipindahkan ke 
-   komputer lain.
+1. Pastikan file "PDF_Renamer_GUI.py" dan "Buat_Exe.bat" ada di 
+   satu folder.
+2. Klik dua kali file "Buat_Exe.bat".
+3. Tunggu hingga muncul tulisan "SELESAI".
+4. File "Aplikasi_Rename_PDF.exe" akan muncul dan siap digunakan.
 
 ------------------------------------------------------------------------
-B. PERSIAPAN DATA (PENTING!)
+B. PERSIAPAN DATA
 ------------------------------------------------------------------------
-Sebelum menjalankan aplikasi, siapkan data Anda:
-
 1. FILE EXCEL:
-   - Buat file Excel baru.
    - Masukkan daftar nama baru di KOLOM A (Kolom pertama).
-   - Pastikan urutan nama di Excel sesuai dengan urutan file PDF 
-     (Aplikasi mengurutkan PDF berdasarkan Abjad/Angka: 01, 02, dst).
-   - Tidak perlu menambahkan ".pdf" di belakang nama (aplikasi akan 
-     menambahkannya otomatis).
-   - Simpan file Excel dan tutup.
+   - Pastikan urutan nama sesuai dengan urutan file PDF.
+   - Tidak perlu menulis ekstensi ".pdf".
 
 2. FILE PDF:
-   - Pastikan semua file PDF terkumpul dalam satu folder.
-   - Pastikan nama file PDF asli sudah bisa diurutkan (Sort by Name) 
-     agar sesuai dengan urutan baris di Excel.
+   - Kumpulkan semua PDF dalam satu folder.
+   - Pastikan nama file PDF asli bisa diurutkan (Sort by Name) 
+     agar urutannya cocok dengan Excel (misal: 01.pdf, 02.pdf).
 
 ------------------------------------------------------------------------
 C. CARA MENJALANKAN APLIKASI
 ------------------------------------------------------------------------
 1. Klik dua kali "Aplikasi_Rename_PDF.exe".
-2. Klik tombol "MULAI PROSES".
-3. Jendela pertama: Pilih FOLDER tempat file PDF asli berada.
-4. Jendela kedua: Pilih FILE EXCEL yang berisi daftar nama.
-5. Tunggu proses berjalan.
-6. Jika selesai, aplikasi akan memberitahu jumlah file yang berhasil.
+2. Klik tombol HIJAU "MULAI PROSES".
+3. Pilih FOLDER tempat file PDF asli berada.
+4. Pilih FILE EXCEL yang berisi daftar nama.
+5. Tunggu proses selesai.
+
+*Catatan: Jika Anda butuh bantuan, klik tombol KUNING di dalam aplikasi.*
 
 ------------------------------------------------------------------------
-D. LOKASI HASIL
+D. PEMECAHAN MASALAH (PENTING UNTUK PENGGUNA BARU)
 ------------------------------------------------------------------------
-Hasil file yang sudah di-rename akan berada di folder baru yang dibuat 
-secara otomatis di samping folder asli Anda.
-Nama foldernya diawali dengan: "HASIL_RENAME_..."
+Masalah: Muncul layar biru "Windows protected your PC"?
+
+Solusi: 
+1. Klik tulisan "More info" (garis bawah).
+2. Klik tombol "Run anyway".
+
+Ini NORMAL dan bukan virus. Peringatan ini muncul karena aplikasi ini 
+bersifat "Private/Buatan Sendiri" (rezaldwntr) dan belum didaftarkan 
+sertifikat digital ke Microsoft.
+
+Setelah diklik "Run anyway", aplikasi akan berjalan normal selamanya.
 
 ------------------------------------------------------------------------
-PEMECAHAN MASALAH (TROUBLESHOOTING)
-------------------------------------------------------------------------
-1. "Windows protected your PC" saat membuka aplikasi?
-   - Klik "More info", lalu klik tombol "Run anyway". 
-   - Ini normal karena aplikasi ini dibuat sendiri dan tidak memiliki 
-     sertifikat digital berbayar dari Microsoft.
-
-2. Jumlah file tidak sesuai?
-   - Cek apakah ada file PDF yang rusak (corrupt).
-   - Cek apakah jumlah baris di Excel sama dengan jumlah file di folder.
-
-3. Urutan nama tertukar?
-   - Pastikan file PDF asli Anda memiliki penomoran yang konsisten 
-     (Contoh: gunakan 01, 02, ... , 10. Jangan 1, 2, ... , 10 karena 
-     komputer membaca 10 lebih dulu daripada 2).
-
-========================================================================
-Dibuat dengan Python
+© rezaldwntr
 ========================================================================
