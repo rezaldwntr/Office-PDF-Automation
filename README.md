@@ -2,8 +2,6 @@
 
 Aplikasi desktop sederhana berbasis Python untuk mengubah nama file PDF secara massal menggunakan data dari Excel. Cocok untuk administrasi kantor, HRD, dan pengelolaan dokumen.
 
-![Screenshot Aplikasi](https://via.placeholder.com/800x400?text=Screenshot+Aplikasi+Anda+Disini) 
-*(Ganti link di atas dengan link gambar screenshot aplikasi Anda nanti)*
 
 ## ✨ Fitur Utama
 * **Aman:** Tidak menimpa file asli (sistem Copy & Rename).
